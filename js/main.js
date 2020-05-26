@@ -1,6 +1,15 @@
 'use strict';
 
+
+
 (() => {
+  window.onload = function() {
+    const loading = document.querySelector('.loading');
+    loading.classList.add('loaded');
+  }
+
+
+
   class Icon {
     constructor(canvas) {
       this.ctx = canvas.getContext('2d');
